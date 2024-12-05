@@ -1,29 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="kysgorotcedut">
-    <title>INDEX HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria i Tekst</title>
     <style>
-        img{
-            max-height: 100%;
-            max-width: 100%;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
-    <p>no ok NIGGA</p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-        Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-        
-        
-        Where does it come from?
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_e51UwJG6_m3i_LrJM7RlRBBmGVMTLqClXA&s">
+    <header>
+        <h1>Galeria i Tekst Lorem Ipsum</h1>
+    </header>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 1">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 2">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 3">
+        <img src="https://via.placeholder.com/300" alt="Placeholder Image 4">
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique orci id libero varius, ac sagittis ligula fermentum. Nam gravida metus in augue congue, at congue magna sagittis. Integer nec risus sit amet lacus pharetra interdum sit amet et metus.</p>
+        <p>Ut ornare justo non nunc venenatis, sed luctus ex dapibus. Phasellus convallis dolor sit amet risus accumsan feugiat. Sed euismod, justo sit amet vulputate tincidunt, nulla ligula malesuada neque, vitae aliquet magna nulla sit amet erat.</p>
+        <p>Aenean suscipit lectus sed velit elementum, non ultrices lectus fermentum. Fusce vehicula dictum metus non faucibus. Quisque sollicitudin nunc sit amet eros tempor tristique.</p>
+        <p>Donec vulputate venenatis risus, sit amet tempor erat aliquet at. Etiam fringilla orci ut tellus auctor, vel vehicula est auctor. Sed dictum volutpat ipsum a fringilla. Nulla facilisi.</p>
+    </div>
 </body>
 </html>
