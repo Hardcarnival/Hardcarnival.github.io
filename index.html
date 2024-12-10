@@ -3,34 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NO I KYS</title>
+    <title>Portfolio Rafała Bogdańskiego-Bodycha</title>
     <style>
-
-
-        div{
-
-        background-color: #213769;
+        /* Podstawowy reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        main{
 
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 100px 100px 100px;
-        grid-gap: 10px;
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .skills-grid, .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-item, .project-item {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .nav-menu {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
 <body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Rafał Bogdański-Bodych</h1>
+            <p>Web Developer | Grafik | Pasjonat Technologii</p>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#about">O mnie</a></li>
+                    <li><a href="#skills">Umiejętności</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <section id="about" class="about section">
+            <h2>O mnie</h2>
+            <p>
+                Cześć! Nazywam się Rafał Bogdański-Bodych i jestem pasjonatem programowania oraz projektowania stron internetowych. Tworzę nowoczesne, responsywne i funkcjonalne strony oraz aplikacje. Jestem też absolwentem Technikum 10 we Wrocławiu. 
+            </p>
+        </section>
+        <section id="skills" class="skills section">
+            <h2>Umiejętności</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Photoshop</div>
+                <div class="skill-item">UX/UI Design</div>
+                <div class="skill-item">Node.js</div>
+            </div>
+        </section>
+        <section id="projects" class="projects section">
+            <h2>Projekty</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>Projekt 1</h3>
+                    <p>Strona portfolio zbudowana na CSS Grid.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Projekt 2</h3>
+                    <p>Interaktywna aplikacja z React.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Projekt 3</h3>
+                    <p>Sklep internetowy oparty na Node.js.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact section">
+            <h2>Kontakt</h2>
+            <p>Skontaktuj się ze mną pod adresem: <a href="mailto:hardcarnival@gmail.com">hardcarnival@gmail.com</a></p>
+            <p>Telefon: +48 730 810 502</p>
+        </section>
     </main>
+    <footer class="footer">
+        <p>&copy; 2024 Rafał Bogdański-Bodych. Wszystkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
