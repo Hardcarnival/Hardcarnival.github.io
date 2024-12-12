@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Rafała Bogdańskiego-Bodycha - Web Developer, Grafik i pasjonat technologii.">
     <title>Portfolio Rafała Bogdańskiego-Bodycha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
-        /* Podstawowy reset */
         * {
             margin: 0;
             padding: 0;
@@ -16,18 +18,23 @@
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
+            background-color: #f3f3f3;
+            scroll-behavior: smooth;
         }
 
         header {
-            background-color: #0078d7;
+            background: linear-gradient(90deg, #0078d7, #00aaff);
             color: white;
             padding: 20px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .header-content h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
         }
 
@@ -43,14 +50,17 @@
             text-decoration: none;
             color: white;
             font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
 
         .nav-menu a:hover {
-            text-decoration: underline;
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -65,8 +75,14 @@
             background: white;
             padding: 20px;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-item:hover, .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
 
         footer {
@@ -77,15 +93,23 @@
             margin-top: 20px;
         }
 
-        @media (max-width: 768px) {
-            .header-content h1 {
-                font-size: 2rem;
-            }
+        .contact a {
+            color: #0078d7;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-            .nav-menu {
-                flex-direction: column;
-                gap: 10px;
-            }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        [data-aos] {
+            opacity: 0;
+            transition-property: opacity, transform;
+        }
+
+        [data-aos].aos-animate {
+            opacity: 1;
         }
     </style>
 </head>
@@ -105,24 +129,24 @@
         </div>
     </header>
     <main>
-        <section id="about" class="about section">
+        <section id="about" class="about section" data-aos="fade-up">
             <h2>O mnie</h2>
             <p>
-                Cześć! Nazywam się Rafał Bogdański-Bodych i jestem pasjonatem programowania oraz projektowania stron internetowych. Tworzę nowoczesne, responsywne i funkcjonalne strony oraz aplikacje. Jestem też absolwentem Technikum 10 we Wrocławiu. 
+                Cześć! Nazywam się Rafał Bogdański-Bodych i jestem pasjonatem programowania oraz projektowania stron internetowych. Tworzę nowoczesne, responsywne i funkcjonalne strony oraz aplikacje. Jestem też absolwentem Technikum 10 we Wrocławiu.
             </p>
         </section>
-        <section id="skills" class="skills section">
+        <section id="skills" class="skills section" data-aos="fade-right">
             <h2>Umiejętności</h2>
             <div class="skills-grid">
-                <div class="skill-item">HTML & CSS</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">React</div>
-                <div class="skill-item">Photoshop</div>
-                <div class="skill-item">UX/UI Design</div>
-                <div class="skill-item">Node.js</div>
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML & CSS</div>
+                <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                <div class="skill-item"><i class="fas fa-pencil-alt"></i> Photoshop</div>
+                <div class="skill-item"><i class="fas fa-paint-brush"></i> UX/UI Design</div>
+                <div class="skill-item"><i class="fab fa-node"></i> Node.js</div>
             </div>
         </section>
-        <section id="projects" class="projects section">
+        <section id="projects" class="projects section" data-aos="fade-left">
             <h2>Projekty</h2>
             <div class="projects-grid">
                 <div class="project-item">
@@ -139,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact section">
+        <section id="contact" class="contact section" data-aos="fade-up">
             <h2>Kontakt</h2>
             <p>Skontaktuj się ze mną pod adresem: <a href="mailto:hardcarnival@gmail.com">hardcarnival@gmail.com</a></p>
             <p>Telefon: +48 730 810 502</p>
@@ -148,5 +172,13 @@
     <footer class="footer">
         <p>&copy; 2024 Rafał Bogdański-Bodych. Wszystkie prawa zastrzeżone.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+        });
+    </script>
 </body>
 </html>
