@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUST</title>
+    <link rel="stylesheet" href="../styles/sub-style.css">
+</head>
+
+<body>
+    <h1>RUST</h1>
+    <nav class="sidebar">
+        <div class="close-sidebar-button">
+            <p class="arrow">
+                < </p>
+        </div>
+        <a href="../index.html" class="home">Strona główna</a>
+        <div class="languages-dropdown">
+            <p class="title">Języki programowania</p>
+            <br>
+            <a href="../subpages/sub-page0.html" class="language">Javascript</a>
+            <a href="../subpages/sub-page1.html" class="language">B</a>
+            <a href="../subpages/sub-page2.html" class="language">C</a>
+            <a href="../subpages/sub-page3.html" class="language">C++</a>
+            <a href="../subpages/sub-page4.html" class="language">C#</a>
+            <a href="../subpages/sub-page5.html" class="language">Rust</a>
+            <a href="../subpages/sub-page6.html" class="language">Java</a>
+            <a href="../subpages/sub-page7.html" class="language">Python</a>
+            <a href="../subpages/sub-page8.html" class="language">Golang</a>
+            <a href="../subpages/sub-page9.html" class="language">PHP</a>
+        </div>
+        <div class="toggle-theme">
+            <p class="title-2">Zmień kolorystykę</p>
+            <div class="theme-list">
+                <p class="theme dark-theme">Ciemna</p>
+                <p class="theme light-theme">Jasna</p>
+            </div>
+        </div>
+        <div id="media">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=_e9yMqmXWo0&ab_channel=CatsMakeLifeGood'" class="media-buttons">
+                <img src="../images/media/youtube.svg" class="media-1" alt="YouTube" draggable="false">
+            </button>
+            <button onclick="window.location.href='https://www.instagram.com'" class="media-buttons">
+                <img src="../images/media/instagram.svg" class="media-2" alt="Instagram" draggable="false">
+            </button>
+            <button onclick="window.location.href='https://www.facebook.com'" class="media-buttons">
+                <img src="../images/media/facebook.svg" class="media-3" alt="Facebook" draggable="false">
+            </button>
+            <button onclick="window.location.href='https://discord.gg/sVmnfwKECD'" class="media-buttons">
+                <img src="../images/media/discord.svg" class="media-4" alt="Discord" draggable="false">
+            </button>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="description">
+            <div class="text-or-video text ">
+                Rust to nowoczesny język programowania, który zyskał uznanie za swoją zdolność do łączenia wysokiej wydajności z bezpieczeństwem pamięci. Stworzony przez firmę Mozilla, Rust został zaprojektowany z myślą o tworzeniu niezawodnego oprogramowania, które unika typowych błędów, takich jak naruszenia dostępu do pamięci czy wycieki pamięci. Obecnie jest szeroko wykorzystywany w systemach wbudowanych, aplikacjach serwerowych, grach komputerowych oraz oprogramowaniu wymagającym dużej wydajności i niezawodności.
+                <br><br>
+                Rust to język kompilowany, co oznacza, że kod źródłowy jest tłumaczony na natywny kod maszynowy, zapewniając wysoką wydajność porównywalną z C i C++. Jednocześnie Rust wyróżnia się systemem zarządzania pamięcią bez potrzeby korzystania z mechanizmu Garbage Collection. Dzięki temu programiści mają pełną kontrolę nad zasobami, jednocześnie korzystając z zaawansowanego systemu typów i pożyczania (ownership and borrowing), który zapobiega wielu klasom błędów już na etapie kompilacji.
+                <br><br>
+                Jedną z głównych zalet Rust jest jego wsparcie dla programowania równoległego i współbieżnego, co czyni go idealnym językiem dla aplikacji wielowątkowych i pracy z dużymi ilościami danych. Rust umożliwia tworzenie bezpiecznych i skalowalnych rozwiązań dzięki eliminacji błędów związanych z wyścigami danych.
+                <br><br>
+                Popularność Rust wzrosła dzięki jego przyjaznemu ekosystemowi narzędzi i bibliotek, takich jak Cargo – zaawansowany system zarządzania paczkami i kompilacji, który znacząco ułatwia proces tworzenia, testowania i wdrażania oprogramowania. Dodatkowo Rust posiada bogatą społeczność programistyczną i dostęp do bibliotek, takich jak Tokio do obsługi asynchronicznych operacji czy Actix do tworzenia szybkich aplikacji serwerowych.
+                <br><br>
+                Rust jest szczególnie ceniony w projektach wymagających wysokiej niezawodności, takich jak systemy operacyjne, sterowniki urządzeń, silniki gier czy blockchain. Dzięki swojej otwartości i wsparciu ze strony społeczności, język ten zdobył również popularność w projektach open-source oraz wśród firm technologicznych, takich jak Microsoft, Amazon czy Google.
+                <br><b></b>
+                Dzięki ciągłemu rozwojowi i innowacyjnemu podejściu do bezpieczeństwa i wydajności, Rust zyskał reputację jednego z najbardziej nowoczesnych języków programowania. Jego zdolność do tworzenia wydajnych, skalowalnych i bezpiecznych aplikacji sprawia, że jest to doskonały wybór zarówno dla programistów systemowych, jak i twórców oprogramowania wysokopoziomowego.
+            </div>
+            <div class="text-or-video video hide">
+                <iframe class="iframe-video" src="https://www.youtube.com/embed/5C_HPTJg5ek"
+                    title="From Zero to Full Stack: Master JavaScript and Create Dynamic Web Apps" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="description-button">
+                <div class="text-or-video-button text-button">Opis</div>
+                <div class="text-or-video-button video-button">Filmik</div>
+            </div>
+        </div>
+    </div>
+    <div class="console-container">
+        <div class="editor-menu">
+            <div class="btn-run-container">
+                <button class="btn-run">Uruchom kod</button>
+            </div>
+            <div class="filler"></div>
+        </div>
+        <div class="terminal-container">
+            <div class="left">
+                <div class="editor" contenteditable="">Napisz tutaj kod</div>
+            </div>
+            <div class="bar" title="Click and drag"></div>
+            <div class="right">
+                <iframe src="" frameborder="0" class="iframe"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/gsap.js"></script>
+    <script src="../scripts/sub-script.js"></script>
+</body>
+
+</html>
